@@ -20,6 +20,8 @@ public class PlayerPhysics : MonoBehaviour
             foreach (Rigidbody2D bone in bones)
             {
                 bone.constraints = RigidbodyConstraints2D.None;
+
+                Destroy(GetComponent<Animator>());
             }
         }
     }
